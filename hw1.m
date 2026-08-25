@@ -21,6 +21,8 @@ lambda = 1;
 u = (Q - lambda*eye(3));
 disp(u);
 
+u_hat = [];
+
 u_x = ;
 u_y = ;
 u_z = ;
