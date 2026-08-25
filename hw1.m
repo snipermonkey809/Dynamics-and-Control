@@ -1,4 +1,4 @@
-theta = 40
+theta = 40;
 
 R1 = [1, 0, 0;
       0, cosd(theta), sind(theta);
@@ -12,6 +12,21 @@ R3 = [cosd(theta), sind(theta), 0;
       -sind(theta), cosd(theta), 0;
       0, 0, 1];
 
-Q = R1 * R2 * R3;
+Q = R3 * R2 * R1;
 
 disp(Q);
+
+lambda = 1;
+
+u = (Q - lambda*eye(3));
+disp(u);
+
+u_x = ;
+u_y = ;
+u_z = ;
+
+u_tilda = [0, -u_z, u_y;
+            u_z, 0, -u_x;
+            -u_y, u_x, 0];
+
+disp(u_tilda);
