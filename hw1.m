@@ -1,3 +1,4 @@
+
 theta = 40;
 
 R1 = [1, 0, 0;
@@ -13,6 +14,17 @@ R3 = [cosd(theta), sind(theta), 0;
       0, 0, 1];
 
 Q = R3 * R2 * R1;
-
-
 disp(Q);
+[EVector,EValue] = eig(Q);
+
+lamda = diag(EValue);
+disp(lamda);
+
+positive_e_phi = lamda(2);
+
+%Eulers theorem is positive_e_phi = cos(phi) + i*sin(phi)
+a = real(positive_e_phi);
+b = imag(positive_e_phi);
+
+phi_degree = atan2d(b, a);
+disp(phi_degree);
