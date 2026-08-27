@@ -1,6 +1,7 @@
 alpha = 40;
 beta = 25;
 
+
 R1 = [1, 0, 0;
       0, cosd(alpha), sind(alpha);
       0, -sind(alpha), cosd(alpha)];
