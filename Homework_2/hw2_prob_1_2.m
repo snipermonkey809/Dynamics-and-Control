@@ -1,3 +1,5 @@
+%%Question 1 
+
 data = [
     10  1   1   1;
     10 -1  -1  -1;
@@ -49,4 +51,22 @@ disp(I_total)
 I_G = I_not - I_total;
 disp('answer');
 disp(I_G);
+
+
+%%Question 2 Part
+l = (0.33);
+m = (0.67);
+n = (0.677);
+
+I_11 = I_G(1,1);
+I_22 = I_G(2,2);
+I_33 = I_G(3,3);
+I_12 = I_G(1,2);
+I_13 = I_G(1,3);
+I_23 = I_G(2,3);
+
+I_mass_moment = I_11*l^2 + I_22*m^2 + I_33*n^2 + 2*I_12*l*m + 2*I_13*l*n + 2*I_23*m*n;
+
+disp('mass moment of inertia');
+disp(I_mass_moment);
 
