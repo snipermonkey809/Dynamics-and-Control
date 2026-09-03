@@ -26,3 +26,7 @@ disp(DCM);
 %part 3
 disp('Determinant of dcm:');
 disp(det(DCM));
+
+verification = DCM * I * DCM';
+disp('Verification:');
+disp(verification); 
