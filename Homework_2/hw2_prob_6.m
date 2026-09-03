@@ -1,4 +1,4 @@
- %%Part A
+%%Part A
 %sphere
 m_sphere = 2;
 x = 0;
@@ -40,7 +40,7 @@ I_cm = I_total_sphere + I_total_cube;
 disp('Inertia Total Matrix CM:');
 disp(I_cm);
 
- %%Part B
+%%Part B
 v = [(1/sqrt(3)); (1/sqrt(3)); (1/sqrt(3))];
 
 scalar = v' * I_cm * v;
