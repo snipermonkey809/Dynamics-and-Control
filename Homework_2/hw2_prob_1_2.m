@@ -42,8 +42,8 @@ z_com = sum(data(:,1).*data(:,4)) / m_total;
 
 
 I_total = m_total * [y_com^2 + z_com^2, -x_com*y_com, -x_com*z_com;
-           -x_com*y_com, x_com^2 + z_com^2, -y_com*z_com;
-           -x_com*z_com, -y_com*z_com, x_com^2 + y_com^2];
+                     -x_com*y_com, x_com^2 + z_com^2, -y_com*z_com;
+                     -x_com*z_com, -y_com*z_com, x_com^2 + y_com^2];
 
 disp('mass matrix part');
 disp(I_total)
@@ -56,7 +56,7 @@ disp(I_G);
 %%Question 2 Part
 l = (0.33);
 m = (0.67);
-n = (0.677);
+n = (0.6777);
 
 I_11 = I_G(1,1);
 I_22 = I_G(2,2);
