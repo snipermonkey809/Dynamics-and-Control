@@ -35,7 +35,7 @@ I_not = I{1} + I{2} + I{3} + I{4} + I{5} + I{6};
 disp('Initial')
 disp(I_not);
 
-%finding center of mass
+%finding center of mass for each axis
 x_com = sum(data(:,1).*data(:,2)) / m_total;
 y_com = sum(data(:,1).*data(:,3)) / m_total;
 z_com = sum(data(:,1).*data(:,4)) / m_total;
